@@ -5,6 +5,8 @@ const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
+const dotenv = require("dotenv");
+dotenv.config()
 
 
 const app = express();
